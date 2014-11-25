@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Book do
 	
 	before :each do
-		@book = Book.new "Title","Author", :catrgory
+		@book = Book.new "Title","Author", :category
 	end
 
 	describe '#new' do
@@ -24,9 +24,9 @@ describe Book do
 		end
 	end
 
-	describe "#catrgory" do
-		it "returns the correct catrgory" do
-			@book.catrogory.should eql :catrgory
+	describe "#category" do
+		it "returns the correct category" do
+			@book.category.should eql :category
 		end
 	end
 
